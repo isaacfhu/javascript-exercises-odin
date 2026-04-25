@@ -1,17 +1,10 @@
 let targetArr = [1, 2, 2, 4]
 
-const removeFromArray = function(arr, ...target) {
+const removeFromArray = function(arr, ...targets) {
 
-    for (targetIndex = 0; targetIndex < target.length; targetIndex++) {
-        for (arrIndex = 0; arrIndex < arr.length; arrIndex++) {
-            if (targetIndex === arrIndex) arr.splice(arr[arrIndex], 1)
-        }
-    }
-
-    return arr
+    return arr.filter(item => !targets.includes(item))
 };
 
-/*        arr.splice(arr.indexOf(target[i]), 1) */
 console.log(removeFromArray(targetArr, 2))
 
 // Do not edit below this line

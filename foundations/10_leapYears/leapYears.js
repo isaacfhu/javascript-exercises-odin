@@ -1,6 +1,4 @@
 const leapYears = function(year) {
-
-    console.log(year / 4)
     if (Number.isInteger(year / 4) &&
         !Number.isInteger(year / 100)
     ) 
@@ -10,8 +8,6 @@ const leapYears = function(year) {
     else 
         return false
 };
-
-console.log(leapYears(1600))
 
 /*    if (Number.isInteger(year / 4) && 
         !Number.isInteger(year / 100) &&
